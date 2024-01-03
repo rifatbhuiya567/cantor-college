@@ -1,0 +1,285 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+  :root {
+    --h1: 30px;
+    --h2: 28px;
+    --h3: 25px;
+    --h4: 22px;
+    --h5: 19px;
+    --h6: 17px;
+    --lg: 17px;
+    --bs: 16px;
+    --sm: 14px;
+  }
+
+  .hero-area {
+    height: 440px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .hero-area .w-90,
+  .inbox .w-90 {
+    width: 100%;
+  }
+
+  .who-we-are .d-flex,
+  .theatre .d-flex,
+  .atrium .d-flex,
+  .about .d-flex {
+    gap: 20px;
+  }
+
+  .subpage-padding .breadcrumbs .d-flex {
+    gap: 4px;
+  }
+
+  .breadcrumbs li:nth-child(2) {
+    margin-top: 2px;
+  }
+
+  .who-we-are .w-40,
+  .theatre .w-40,
+  .atrium .w-40,
+  .about .w-40 {
+    width: 45%;
+  }
+
+  .who-we-are .w-50,
+  .theatre .w-50,
+  .atrium .w-50,
+  .about .w-50 {
+    width: 55%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  :root {
+    --h1: 29px;
+    --h2: 27px;
+    --h3: 24px;
+    --h4: 21px;
+    --h5: 19px;
+    --h6: 17px;
+    --lg: 17px;
+    --bs: 15px;
+    --sm: 14px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .hero-area {
+    height: 440px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .who-we-are .w-40,
+  .theatre .w-40,
+  .atrium .w-40,
+  .about .w-40 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .website-nav {
+    display: flex;
+    justify-content: end;
+  }
+
+  .website-nav .nav-list {
+    display: none;
+  }
+
+  .collapsed .nav-list {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    overflow-x: hidden;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    z-index: 100;
+  }
+
+  .collapsed .nav-list ul {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+  }
+
+  .collapsed ul li {
+    margin: 12px 0;
+  }
+
+  .collapsed ul li a {
+    font-weight: 400;
+    color: var(--gray);
+    font-size: var(--large);
+  }
+
+  .website-nav ul .active a {
+    color: var(--gray);
+  }
+
+  .collapsed ul .active::after {
+    background-color: var(--gray) !important;
+  }
+
+  .website-nav button {
+    display: block;
+  }
+
+  .collapsed .close {
+    position: absolute;
+    top: 40px;
+    font-size: 36px;
+    right: 40px;
+    margin-left: 54px;
+    color: var(--gray);
+    z-index: 101;
+  }
+
+  .collapsed .close:hover {
+    color: var(--white);
+  }
+
+  .footer .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer .d-flex .w-30 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer .d-flex .w-30 ul {
+    margin-top: 16px;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  .hero-area .w-90,
+  .inbox .w-90 {
+    width: 100%;
+  }
+
+  .who-we-are .d-flex,
+  .theatre .d-flex,
+  .atrium .d-flex,
+  .about .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .who-we-are .w-50,
+  .theatre .w-50,
+  .atrium .w-50,
+  .about .w-50 {
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .about .mt {
+    margin-top: 16px;
+  }
+
+  .contact .w-80 {
+    width: 100%;
+  }
+
+  .contact .form-inner .d-flex {
+    display: block;
+  }
+
+  .contact .form-inner .d-flex .w-50 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --h1: 26px;
+    --h2: 24px;
+    --h3: 22px;
+    --h4: 20px;
+    --h5: 18px;
+    --h6: 16px;
+    --lg: 16px;
+    --bs: 14px;
+    --sm: 13px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .section-padding {
+    padding: 40px 0;
+  }
+
+  .section-heading-top-gap {
+    margin-top: 24px;
+  }
+
+  .subpage-padding .section-padding {
+    padding: 24px 0;
+  }
+
+  .hero-area {
+    height: 420px;
+  }
+
+  .hero-area h3 {
+    margin-bottom: 4px;
+  }
+
+  .hero-area h1 {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .hero-area ul {
+    margin-top: 16px;
+  }
+
+  .who-we-are .w-40,
+  .theatre .w-40,
+  .atrium .w-40,
+  .about .w-40 {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 4px 20px;
+  }
+
+  .contact-form {
+    padding: 8px 12px;
+  }
+
+  .form-inner .btn {
+    padding: 6px 16px;
+  }
+}

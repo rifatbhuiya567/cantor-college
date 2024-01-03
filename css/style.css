@@ -1,0 +1,848 @@
+@charset "UTF-8";
+
+/*
+----------------
+Table Of Content
+----------------
+0. Common CSS Start
+1. Header CSS Start
+2. Hero Area CSS Start
+3. Who We Are CSS Start
+4. Theatre CSS Start
+5. Atrium CSS Start
+6. Footer CSS Start
+7. About Us CSS Start
+8. Contact Us CSS Start
+9. Inbox CSS Start
+*/
+
+:root {
+  --primary: #5371ff;
+  --text: #323646;
+  --white: #ffffff;
+  --off-white: #f5f5f8;
+  --black: #000000;
+  --gray: #c5c5c5;
+  --h1: 32px;
+  --h2: 29px;
+  --h3: 26px;
+  --h4: 23px;
+  --h5: 20px;
+  --h6: 18px;
+  --lg: 18px;
+  --bs: 16px;
+  --sm: 14px;
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 25px;
+  --radius-round: 50%;
+  --transition: all linear 0.3s;
+  --serif: "Roboto Serif", serif;
+  --sans-serif: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.i-flex {
+  display: inline-flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+.min-vw-100 {
+  min-width: 100vw;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.mh-100 {
+  max-height: 100%;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.gap-1 {
+  gap: 4px;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-3 {
+  gap: 16px;
+}
+
+.gap-4 {
+  gap: 24px;
+}
+
+.gap-5 {
+  gap: 48px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.transition {
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.btn {
+  padding: 4px 24px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  font-size: var(--bs);
+  border: none;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-lg);
+  -webkit-border-radius: var(--radius-lg);
+  -moz-border-radius: var(--radius-lg);
+  -ms-border-radius: var(--radius-lg);
+  -o-border-radius: var(--radius-lg);
+}
+
+.btn:hover {
+  border: 2px solid transparent;
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-heading h2 {
+  font-weight: 600;
+  font-family: var(--serif);
+  position: relative;
+  top: 0;
+  left: 0;
+  color: var(--primary);
+  padding-left: 12px;
+}
+
+.section-heading h2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 6px;
+  content: "";
+  background-color: var(--primary);
+  border-radius: var(--radius-lg);
+  -webkit-border-radius: var(--radius-lg);
+  -moz-border-radius: var(--radius-lg);
+  -ms-border-radius: var(--radius-lg);
+  -o-border-radius: var(--radius-lg);
+}
+
+.section-heading-top-gap {
+  margin-top: 32px;
+}
+
+.section-image {
+  transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  box-shadow: 0.5px 0.5px 3px 0 rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
+}
+
+.bg-off-white {
+  background-color: var(--off-white);
+}
+
+.subpage-padding {
+  padding: 20px 0;
+}
+
+.subpage-padding .section-padding {
+  padding: 48px 0;
+}
+
+.subpage-padding .section-heading {
+  margin-top: 20px;
+}
+
+.breadcrumbs li a {
+  font-weight: 500;
+  color: var(--primary);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.breadcrumbs li a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.breadcrumbs li:nth-child(2) {
+  margin-top: 4px;
+  font-size: var(--sm);
+}
+
+.form-label {
+  font-weight: 500;
+  font-family: var(--serif);
+  font-size: var(--bs);
+  margin-bottom: 6px;
+  color: var(--black);
+}
+
+.form-label span {
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 4px 6px;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.5;
+  border: 1px solid rgba(83, 112, 255, 0.4);
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
+}
+
+.form-control::placeholder {
+  font-size: var(--sm);
+}
+
+.form-control:hover {
+  border: 1px solid rgba(83, 112, 255, 0.7);
+}
+
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+body {
+  scroll-behavior: smooth;
+  color: var(--text);
+  background-color: var(--white);
+  font-weight: 400;
+  font-size: var(--bs);
+  font-family: var(--sans-serif);
+}
+/* Common CSS End */
+
+.website-header {
+  padding: 12px 0;
+  background: var(--primary);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  box-shadow: 0.5px 0.5px 3px 0 rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+.website-header .logo img {
+  width: 260px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.website-header nav a {
+  color: var(--white);
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: var(--lg);
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.website-header nav a:hover {
+  opacity: 0.7;
+}
+
+.website-header nav a::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: var(--white);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.website-header nav .active::after {
+  width: calc(100% - 16px);
+}
+
+.website-header nav a:hover::after {
+  width: calc(100% - 16px);
+  opacity: 0.7;
+}
+
+.website-nav button {
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+}
+
+.website-nav .close {
+  font-size: 26px;
+  border: none;
+}
+
+.website-nav .solid-bar {
+  font-size: 22px;
+  opacity: 0.7;
+  padding: 0 6px;
+  color: var(--white);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  border: 2px solid var(--white);
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
+}
+
+.website-nav .solid-bar:hover {
+  opacity: 1;
+}
+/* Header CSS End */
+
+.hero-area {
+  height: 540px;
+  background: url(../images/cantor-building/1.jpg) no-repeat center / cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: var(--gray);
+}
+
+.hero-area::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.hero-area h3 {
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.hero-area h1 {
+  font-weight: 600;
+  font-family: var(--serif);
+  margin-bottom: 16px;
+}
+
+.hero-area ul {
+  margin-top: 24px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.hero-area ul a {
+  color: var(--gray);
+}
+/* Hero Area CSS End */
+
+.who-we-are .section-content h3 {
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.who-we-are .section-content h3 span {
+  font-family: var(--serif);
+  color: var(--primary);
+}
+
+.who-we-are .section-content h4 {
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-family: var(--serif);
+}
+/* Who We Are CSS End */
+
+.theatre .section-content h4 {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-family: var(--serif);
+}
+
+.theatre .section-content p {
+  margin-bottom: 12px;
+}
+
+.theatre .section-content p:last-child {
+  margin-bottom: 0;
+}
+/* Theatre CSS End */
+
+.atrium .section-content h4 {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-family: var(--serif);
+}
+
+.atrium .section-content p {
+  margin-bottom: 12px;
+}
+
+.atrium .section-content p:last-child {
+  margin-bottom: 0;
+}
+/* Atrium CSS End */
+
+.footer {
+  padding: 40px 0;
+  color: var(--gray);
+  background-color: var(--text);
+}
+
+footer .logo {
+  margin-bottom: 24px;
+}
+
+footer .logo img {
+  width: 200px;
+  opacity: 0.7;
+}
+
+footer address a {
+  color: var(--gray);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+footer address a:hover {
+  text-decoration: underline;
+}
+
+footer ul li {
+  margin: 2px 0;
+}
+
+footer ul li span {
+  font-size: var(--sm);
+  font-weight: 300;
+}
+
+footer ul li a {
+  font-weight: 300;
+  color: var(--gray);
+  text-decoration: underline;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+footer ul li a:hover {
+  opacity: 0.8;
+}
+
+footer .copyright {
+  text-align: center;
+  padding: 12px 0;
+  font-size: var(--sm);
+  color: var(--black);
+  background-color: var(--gray);
+}
+/* Footer CSS End */
+
+.about .section-content h1 {
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.about .section-content h1 span {
+  color: var(--primary);
+  font-family: var(--serif);
+}
+
+.about .section-content h3,
+.about .section-content h4 {
+  font-weight: 500;
+  font-family: var(--serif);
+}
+
+.about .section-content p {
+  margin-top: 4px;
+}
+
+.about .mt {
+  margin-top: 24px;
+}
+/* About Us CSS End */
+
+.contact-form {
+  padding: 20px 28px;
+  box-shadow: 0.5px 0.5px 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: #d9e2e6;
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
+}
+
+.contact-form p a {
+  font-weight: 500;
+  color: var(--black);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.contact-form p a:hover {
+  text-decoration: underline;
+}
+
+.form-inner {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: var(--white);
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
+}
+
+.form-inner .mt {
+  margin-top: 8px;
+}
+
+.form-inner .mb {
+  margin-bottom: 8px;
+}
+
+.form-inner .btn {
+  cursor: pointer;
+  padding: 8px 28px;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.form-inner .btn:hover {
+  opacity: 0.8;
+}
+/* Contact Us CSS End */
+
+.inbox {
+  padding: 40px 0;
+}
+
+.inbox .card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
+}
+
+.inbox .card-header {
+  padding: 8px 16px;
+  background-color: var(--off-white);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inbox .card-header h5,
+.inbox .card-header h6 {
+  font-weight: 500;
+}
+
+.inbox .card-body th {
+  width: 20%;
+  text-align: left;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inbox .card-body td {
+  width: 80%;
+  text-align: left;
+  padding: 4px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inbox .card-body .n {
+  border-bottom: 1px solid transparent;
+}
+/* Inbox CSS End */
